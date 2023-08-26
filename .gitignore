@@ -1,4 +1,12 @@
 # Byte-compiled / optimized / DLL files
+
+.idea
+.coverage*
+.DS_Store
+staticfiles
+.envs/*
+!.envs/.local/
+
 __pycache__/
 *.py[cod]
 *$py.class
