@@ -63,11 +63,7 @@ while True:
       
         data = pd.read_csv('book_name.csv')
         if any(data['name'] == book_name_to_update):
-
-            if 'subject' not in data.columns:
-                data['subject'] = ''
             data.loc[data['name'] == book_name_to_update, 'name'] = new_book_name
-            data.loc[data['name'] == book_name_to_update, 'subject'] = new_subject
         
             data.to_csv('book_name.csv', index=False)  
 
